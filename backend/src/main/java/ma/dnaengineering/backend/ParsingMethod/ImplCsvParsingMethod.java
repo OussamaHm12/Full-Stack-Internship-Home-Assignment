@@ -1,4 +1,4 @@
-package ma.dnaengineering.backend.strategy;
+package ma.dnaengineering.backend.ParsingMethod;
 
 import ma.dnaengineering.backend.model.Employee;
 import ma.dnaengineering.backend.model.JobSummary;
@@ -19,9 +19,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Service
-public class SimpleCsvParsingStrategy implements CsvParsingStrategy {
+public class ImplCsvParsingMethod implements CsvParsingMethod {
 
-    private static final Logger LOGGER = Logger.getLogger(SimpleCsvParsingStrategy.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ImplCsvParsingMethod.class.getName());
 
     private static final int SCALE = 2; // 2 chiffres après la virgule
 
